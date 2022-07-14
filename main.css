@@ -1,0 +1,217 @@
+@charset "UTF-8";
+header nav .container-fluid {
+  background-color: #fff;
+  text-decoration: none;
+  list-style: none;
+  color: #e21515;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+header nav .collapse {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .collapse ul li {
+  list-style: none;
+  position: relative;
+}
+
+header nav .collapse ul li i {
+  font-size: 45px;
+  color: #772323;
+}
+
+header nav .collapse ul li #carrito {
+  display: none;
+}
+
+header nav .collapse ul li #carrito h5 {
+  font-size: 25px;
+}
+
+header nav .collapse ul li #carrito button {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border-color: #ecd9c6;
+  background-color: #fdd086;
+  color: #772323;
+  border-radius: 10px;
+  height: 43px;
+  width: 200px;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 5px;
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+header nav .collapse ul li:hover #carrito {
+  display: block;
+  color: #772323;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background: #ecd9c6;
+  padding: 20px;
+}
+
+header nav .navbar-nav a {
+  color: #772323;
+  margin: 0px 30px;
+  font-size: 25px;
+}
+
+
+
+
+/*----------------------------Productos----------------------------*/
+h2 {
+  background-color: #03010196;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
+  color: #ecd9c6;
+  font: 900 5em 'Patrick Hand', cursive;
+  margin-top: 25px;
+}
+
+.section__galeria {
+  background-color: #0000007e;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  text-align: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.section__galeria p {
+  letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: lighter;
+  font-size: 25px;
+  color: #000000;
+  background-color: #ecd9c6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 3%;
+  border-style: double;
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+.section__galeria img {
+  margin-top: 50px;
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.section__galeria img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section__galeria .card__price {
+  color: #ecd9c6;
+  padding: 5px 20px;
+  background-color: #3f3f3f;
+  border-radius: 30px;
+  width: 25%;
+  margin-left: 38%;
+}
+
+.section__galeria button {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border-color: #ecd9c6;
+  background-color: #fdd086;
+  color: #772323;
+  border-radius: 10px;
+  height: 43px;
+  width: 200px;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 5px;
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+
+
+
+
+  /*----------------------------Contacto Pie de Página----------------------------*/
+  .contacto2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: gray;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100%;
+    text-align: center;
+  }
+
+  .contacto2 a {
+    color: #ecd9c6;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 5px;
+  }
+
+  .footer {
+    font-family: 'Patrick Hand', cursive;
+    font-style: italic;
+    color: gray;
+  }
+
+
+/*----------------------------Media Queries----------------------------*/
+@media (min-width: 992px) and (max-width: 1440px) {
+  .header .navbar .container-fluid img {
+    width: 200px;
+  }
+  .header .navbar .container-fluid .navbar-nav a {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  
+}
+  
