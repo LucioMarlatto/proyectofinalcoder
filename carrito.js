@@ -24,48 +24,12 @@ function renderizarProductos() {
 
 renderizarProductos();
 
-//
-//  Acá hay un error que sigo sin poder resolver. No me aparecen estos elementos en la seccion Ediciones Especiales. <-------------------------------
-//
-
-function renderizarProductosEspeciales() {
-
-    let especiales = document.getElementById("especiales");
-
-    productosEspeciales.forEach((productoEspecial) => {
-
-        let productoEspecialHTML = `
-        <div class="especiales__galeria" id="especiales__galeria">
-            <div class="card">
-                <div class="card__image-container">
-                    <img src=${productoEspecial.src}>
-                </div>
-                <div class="card__content">
-                    <p class="card__title">
-                        ${productoEspecial.producto}
-                    </p>
-                    <div class="card__info">
-                        <p class="card__text">${productoEspecial.info}</p>
-                        <p class="card__price">$${productoEspecial.precio}</p>
-                    </div>
-                    <button class="btn btn-warning" onClick="agregarProductoAlCarrito(${productoEspecial.id})">Agregar al carrito</button>            
-                </div>
-            </div>
-        </div>
-        `
-
-        especiales.innerHTML += productoEspecialHTML;
-    });
-}
-
-renderizarProductosEspeciales();
-
 
 //Función para agregar productos al carrito
 
 function agregarProductoAlCarrito (id){
 
-    //Compara que los elementos de mi array Productos coincidan con los id donde yo hago click
+
     let producto = productos.find(producto => producto.id === id);
 
     let productoEnCarrito = carrito.find(productoEnCarrito => productoEnCarrito.id === id);
@@ -127,25 +91,10 @@ function eliminarProductoDelCarrito(id) {
     renderizarCarrito();
 }
 
-//
-// Acá no logro hacer la función para que todo lo del carrito se elimine. <--------------------------------
-//
-
-//Función eliminar TODOS los productos del carrito
-
-// function eliminarTodosLosProductos() {
-
-// }
 
 
 
 
-//
-// No logro que me aparezca el total en la parte del carrito. <-------------------------------
-//
-
-
-// Función para sumar total de la compra
 
 function calcularTotal() {
     
